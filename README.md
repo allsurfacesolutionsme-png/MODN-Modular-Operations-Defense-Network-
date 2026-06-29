@@ -1,28 +1,17 @@
-# MODN (Modular Operations Defense Network)
 
-MODN is a policy-driven security and AI governance system that enforces, monitors, and audits digital operations across APIs and applications.
+MODN separates concerns into:
 
-## Features
-- Policy Engine (ALLOW / DENY / RESTRICT)
-- Gateway Layer (request interception)
-- AI Risk Simulation Layer
-- Audit Logging System
-- Identity-based access control
-- Traceable decision system
+- **Gateway Layer** → receives and normalizes requests
+- **Policy Engine** → makes enforcement decisions
+- **AI Layer (optional)** → risk scoring and suggestions
+- **Audit System** → logs all decisions for compliance
 
-## Architecture
+---
 
-Request → Gateway → Policy Engine → Decision → Audit Log
+# 🚀 Installation (Termux / Linux / Node.js)
 
-## Run
+## 1. Install dependencies
 
 ```bash
-npm install
-npm start
-``` id="runblock"
-
-Server:
-http://localhost:8080
-
-UI:
-open ui/index.html
+pkg update && pkg upgrade -y   # (Termux only)
+pkg install nodejs git -y
