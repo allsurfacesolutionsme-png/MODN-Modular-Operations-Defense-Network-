@@ -4,14 +4,25 @@ MODN is a policy-driven security and AI governance system that enforces, monitor
 
 ## Features
 - Policy Engine (ALLOW / DENY / RESTRICT)
-- Gateway Layer (request control)
+- Gateway Layer (request interception)
 - AI Risk Simulation Layer
 - Audit Logging System
-- Identity-based request handling
+- Identity-based access control
 - Traceable decision system
+
+## Architecture
+
+Request → Gateway → Policy Engine → Decision → Audit Log
 
 ## Run
 
 ```bash
 npm install
 npm start
+``` id="runblock"
+
+Server:
+http://localhost:8080
+
+UI:
+open ui/index.html
